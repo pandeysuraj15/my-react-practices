@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+
+  background: #f4f1eb;
+}
+
+/* Stopwatch Circle */
+
+.stopwatch {
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 8px solid #e7e2d9;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+
+.label {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.stopwatch h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #222;
+
+  font-variant-numeric: tabular-nums;
+}
+
+.status {
+  margin-top: 10px;
+
+  font-size: 11px;
+  letter-spacing: 2px;
+
+  color: #999;
+}
+
+/* Buttons */
+
+.button-container {
+  display: flex;
+  gap: 14px;
+}
+
+button {
+  width: 105px;
+  padding: 13px 18px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Reset */
+
+.reset-btn {
+  background: #cdca6d;
+  border: 1px solid #ccc5b9;
+  color: white;
+}
+
+.reset-btn:hover {
+  background: #b4b157;
+}
+
+/* Start */
+
+.start-btn {
+  background: #222;
+  border: 1px solid #222;
+  color: white;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.start-btn:hover {
+  background: #333;
+}
+
+/* Pause */
+
+.pause-btn {
+  background: #df695d;
+  border: 1px solid #e7e3dc;
+  color: white;
+}
+
+.pause-btn:hover {
+  background: #bd4e41;
+}
